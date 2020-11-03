@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<title>Juste Prix</title>
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!-- JS -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<script src="assets/js/script.js"></script>
+</head>
+<body>
+
+	<h1 class="display-4 text-center my-5">Jeu du Juste Prix</h1>
+
+	<div class="container">
+		
+		<form>
+			<div class="form-group">
+				<label for="reponseInput">Donnez un nombre entre 0 et 100 :</label>
+				<input type="number" class="form-control" id="reponseInput">
+			</div>
+
+			<div class="d-flex">
+
+				<button class="btn btn-success my-auto" type="button" id="submitBtn">Valider</button>
+
+				<div class="alert alert-primary ml-auto" role="alert" id="moreAlert">
+				  C'est plus !
+				</div>
+				<div class="alert alert-warning ml-auto" role="alert" id="lessAlert">
+				  C'est moins !
+				</div>
+				<div class="alert alert-danger ml-auto" role="alert" id="loseAlert">
+				  C'est perdu !
+				</div>
+				<div class="alert alert-success ml-auto" role="alert" id="winAlert">
+				  C'est gagné !
+				</div>
+
+			</div>
+
+			<p>
+				Coups restant : <span id="hits"></span>
+			</p>
+
+			<div class="text-center py-4">
+				<button class="btn btn-warning" type="button" id="resetBtn">Recommencer</button>
+			</div>
+		</form>
+
+	</div>
+
+</body>
+</html>
